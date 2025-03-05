@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecione a cor:"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/colorRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/redRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vermelho"/>
+
+            <RadioButton
+                android:id="@+id/blueRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Azul"/>
+
+            <RadioButton
+                android:id="@+id/greenRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verde"/>
+
+            <RadioButton
+                android:id="@+id/yellowRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amarelo"/>
+
+            <RadioButton
+                android:id="@+id/purpleRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Roxo"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estilos de texto:"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <CheckBox
+            android:id="@+id/boldCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Negrito"/>
+
+        <CheckBox
+            android:id="@+id/italicCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Itálico"/>
+
+        <CheckBox
+            android:id="@+id/underlineCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sublinhado"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecione a data:"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/confirmButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmar"/>
+
+    </LinearLayout>
+</ScrollView>
